@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mom</title>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main2">
+            <div class="item first">
+                <P>Today the cleaning number is of these two</P>
+            </div>
+            <div class="item second">
+                <!-- <h3>First person</h3> -->
+                <br />
+                <div id="firstPerson"></div>
+            </div>
+            <div class="item third" id="">
+                <!-- <h3>Second person</h3> -->
+                <br />
+                <div id="secondPerson"></div>
+            </div>
+        </div>
+        <button class="item fourth" onclick="update()">
+            Next day!
+        </button>
+    </div>
+
+    <script>
+        list_item=["rahul", "shivam", "kavay", "manoj", "nitin", "deepanshu", "dhannu", "tara", "shakru", "suraj"]
+         
+         function update(){
+             var x=Math.floor(Math.random()*list_item.length);
+
+             document.getElementById("firstPerson").innerHTML=list_item[x]
+
+             x=Math.floor(Math.random()*list_item.length);
+
+             document.getElementById("secondPerson").innerHTML=list_item[x]
+         }
+    </script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mom</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main_2">
+            <div class="item">
+                <p>Aaj khana banana ka number en dono ka hai</p>
+            </div>
+            <div class="item_first" id="first person"></div>
+            <div class="item_second" id="second person"></div>
+            <button type="button" class="item_thord" onclick="update()">Next day</button>
+        </div>
+
+
+    </div>
+</body>
+</html> -->

@@ -1,0 +1,63 @@
+ body {
+    background-color:palegreen;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+} 
+  
+.main2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+  
+.item {
+    width: 300px;
+    height: 300px;
+    background-color: darkblue;
+    margin: 15px;
+    padding: 25px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Ubuntu";
+} 
+  
+.item.first {
+    background-color: darkred;
+} 
+.item.fourth {
+    height: 40px;
+    cursor: pointer;
+    background: yellow;
+    color: black;
+}
+  
+.item.fourth::selection {
+    background: transparent;
+} 
+
+
+
+
+
+
+/* *{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: palevioletred;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column; */
